@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculateNum.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Grid Calculating System</h2>
+        <div class="container2">
+            <div class="left" id="left">
+                <form class="form">
+                    <div class="book1 books">
+                        <label for="">COMPUTER</label>
+                        <input type="number" placeholder="Enter Marks" class="input" id="book1">
+                    </div>
+
+                    <div class="book2 books">
+                        <label for="">PHYSICE</label>
+                        <input type="number" placeholder="Enter Marks" class="input" id="book2">
+                    </div>
+
+                    <div class="book3 books">
+                        <label for="">MATHS</label>
+                        <input type="number" placeholder="Enter Marks" class="input" id="book3">
+                    </div>
+
+                    <div class="book4 books">
+                        <label for="">CHEMISTRY</label>
+                        <input type="number" placeholder="Enter Marks" class="input" id="book4">
+                    </div>
+
+                    <div class="book5 books">
+                        <label for="">ENGLISH</label>
+                        <input type="number" placeholder="Enter Marks" class="input" id="book5">
+                    </div>
+                </form>
+                <button onclick="return calculate()" class="books btn"><i class="fa fa-calculator"></i>Calculate</button>
+            </div>
+
+            <div class="right" id="right">
+                <span id="close"><i class="fa fa-close" ></i></span>
+                <table>
+                    <tr>
+                        <td>Total Marks</td>
+                        <td>500</td>
+                    </tr>
+                    <tr>
+                        <td>Obtain Marks</td>
+                        <td id="obtain"></td>
+                    </tr>
+                    <tr>
+                        <td>Persentage</td>
+                        <td id="pers"></td>
+                    </tr>
+                    <tr>
+                        <td>Grade</td>
+                        <td id="grade"></td>
+                    </tr>
+                    <tr>
+                        <td>Remarks</td>
+                        <td id="remark"></td>
+                    </tr>
+
+                </table>
+            </div>
+            
+        </div>
+
+    </div>
+
+
+
+    <script src="calculate.js"></script>
+</body>
+
+</html>
